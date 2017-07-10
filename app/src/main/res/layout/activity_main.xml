@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.raoj.animation.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_simple_animation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="简单动画"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="重复播放动画"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--动态加载，必须要给定一个空间用来加载Fragment 必须是一个FrameLayout !-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_stop"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="停止动画"-->
+    <!--android:textSize="30sp" />-->
+    <!--<Button-->
+    <!--android:id="@+id/btn_start"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="启动动画" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_stop"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="停止动画" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/image"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="600dp"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@drawable/sea" />-->
+</LinearLayout>
